@@ -20,50 +20,50 @@ sqa_criteria:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate git:
         commands:
-        - /usr/bin/env sh .sqa/script.azure_independent_griffin.sh
-        container: qc.acc_marina_thoughtful_bear
+        - /usr/bin/env sh .sqa/script.cinnabar_inventive_cobra.sh
+        container: qc.acc_brown_artistic_okapi
   QC.Doc:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuchsia_logical_lemur.sh
-        container: qc.doc_gunmetal_perky_camel
+        - /usr/bin/env sh .sqa/script.ceru_diligent_hyena.sh
+        container: qc.doc_mint_vigilant_armadillo
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate git:
         commands:
-        - /usr/bin/env sh .sqa/script.walnut_confused_opossum.sh
-        container: qc.doc_espresso_eager_flamingo
+        - /usr/bin/env sh .sqa/script.cosmos_organized_cockatoo.sh
+        container: qc.doc_gamboge_mature_nymph
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.purple_generous_horse.sh
-        container: qc.doc_polar_alert_toucan
+        - /usr/bin/env sh .sqa/script.bronze_proud_frog.sh
+        container: qc.doc_heather_vigilant_pangolin
   QC.Lic:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sepia_industrious_swan.sh
-        container: qc.lic_cardamom_peppy_roadrunner
+        - /usr/bin/env sh .sqa/script.frost_frugal_bison.sh
+        container: qc.lic_thunder_elated_manatee
   QC.Sec:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cadet_kind_moose.sh
-        container: qc.sec_smoke_calm_wildcat
+        - /usr/bin/env sh .sqa/script.reef_serene_roc.sh
+        container: qc.sec_violet_generous_wolverine
   QC.Sty:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.silver_clever_orangutan.sh
-        container: qc.sty_periwinkle_resourceful_lobster
+        - /usr/bin/env sh .sqa/script.mauve_nurturing_ibex.sh
+        container: qc.sty_glaucous_creative_gecko
   QC.Uni:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.fern_brilliant_wasp.sh
-        container: qc.uni_gunmetal_curious_camel
+        - /usr/bin/env sh .sqa/script.polar_content_jellyfish.sh
+        container: qc.uni_denim_apathetic_kiwi
   QC.Ver:
     repos:
       gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ebony_zealous_swan.sh
-        container: qc.ver_isabelline_adaptable_dormouse
+        - /usr/bin/env sh .sqa/script.paprika_generous_hyena.sh
+        container: qc.ver_incarnadine_serene_dormouse
 timeout: 5400
