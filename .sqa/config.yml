@@ -1,0 +1,69 @@
+config:
+  credentials:
+  - id: https://gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate
+    password_var: GIT_PASSWORD
+    username_var: GIT_USER
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate:
+      branch: main
+      credential_tmp: true
+      credentials_id: https://gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate
+      repo: https://gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sand_mature_stork.sh
+        container: qc.acc_brown_agile_chimpanzee
+  QC.Doc:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.yellow_innocent_horse.sh
+        container: qc.doc_turquoise_eccentric_angelfish
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate git:
+        commands:
+        - /usr/bin/env sh .sqa/script.marigold_trustworthy_salamander.sh
+        container: qc.doc_purple_cheerful_mink
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.butter_resourceful_capybara.sh
+        container: qc.doc_moss_optimistic_moose
+  QC.Lic:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.eggplant_sarcastic_flamingo.sh
+        container: qc.lic_boysenberry_adventurous_lemur
+  QC.Sec:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.paprika_courageous_tapir.sh
+        container: qc.sec_echelon_bold_stork
+  QC.Sty:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.ceru_productive_hare.sh
+        container: qc.sty_pineapple_plucky_wolverine
+  QC.Uni:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.gamboge_mischievous_owl.sh
+        container: qc.uni_ruby_resilient_cougar
+  QC.Ver:
+    repos:
+      gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.chili_smart_axolotl.sh
+        container: qc.ver_scarlet_alert_emu
+timeout: 5400
