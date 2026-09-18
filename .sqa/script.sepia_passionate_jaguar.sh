@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate &&
-    flake8 .
+cd gitlab.acnca.pt/eosc/sqaaas/testsqaaasgitciprivate &&
+    get_git_tags.py
 )

@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate &&
-    pytest  --json-report  --json-report-indent 4
+cd gitlab.acnca.pt/eosc/sqaaas/testsqaaasgitciprivate &&
+    mdl --json  .
 )

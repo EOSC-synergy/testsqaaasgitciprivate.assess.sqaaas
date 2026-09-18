@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate &&
+cd gitlab.acnca.pt/eosc/sqaaas/testsqaaasgitciprivate &&
     licensee detect . --confidence 60 --json 
 )

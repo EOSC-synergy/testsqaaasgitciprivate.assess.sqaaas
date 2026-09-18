@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate &&
-    get_git_tags.py
+cd gitlab.acnca.pt/eosc/sqaaas/testsqaaasgitciprivate &&
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.a.incd.pt/eosc/sqaaas/testsqaaasgitciprivate &&
-    git rev-parse --is-inside-work-tree 
+cd gitlab.acnca.pt/eosc/sqaaas/testsqaaasgitciprivate &&
+    find_doc_files.py --file_type all
 )
